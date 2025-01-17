@@ -1,0 +1,20 @@
+@import "../../../node_modules/@uswds/uswds/packages/usa-table/index";
+
+.width-mobile {
+  .usa-table--stacked-header {
+    tr {
+      border-bottom: 0;
+      th {
+        border-top: 0.25rem solid #1b1b1b;
+        &:first-child{
+          border-top-width: .25rem;
+        }
+      }
+      &:last-child {
+        td:last-child{
+          border-bottom: 0.25rem solid #1b1b1b;
+        }
+      }
+    }
+  }
+}

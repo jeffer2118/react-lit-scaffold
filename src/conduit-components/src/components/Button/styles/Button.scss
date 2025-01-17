@@ -1,0 +1,7 @@
+@forward "../../../global/uswds-config";
+
+@forward "../../../node_modules/@uswds/uswds/packages/usa-button/index";
+
+.usa-button {
+    font-size: 30px;
+}

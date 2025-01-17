@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  gulp:
+    build: .
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "3001:3001"
+    command: gulp --gulpfile ./src/gulpfile.js
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - NODE_ENV=development
+  app:
+    depends_on:
+      - gulp
+    build: .
+    ports:
+      - "8000:8000"
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run start
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - NODE_ENV=development

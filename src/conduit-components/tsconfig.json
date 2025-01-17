@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "lib": ["ESNext", "dom"],
+    "strict": true,
+    "allowJs": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "inlineSources": true,
+    "paths": {
+      "@root/*": ["./src/*"]
+    },
+    "incremental": true
+  },
+  "include": [
+    "src"
+  ]
+}

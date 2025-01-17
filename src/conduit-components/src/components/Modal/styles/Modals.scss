@@ -1,0 +1,17 @@
+@forward "../../../global/uswds-config";
+
+@forward "../../../node_modules/@uswds/uswds/packages/usa-button/index";
+@forward "../../../node_modules/@uswds/uswds/packages/usa-button-group/index";
+@forward "../../../node_modules/@uswds/uswds/packages/usa-modal/index";
+
+.usa-modal-wrapper {
+  visibility: hidden;
+}
+.usa-modal__bg__close {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+  top: 0;
+  left: 0;
+}
