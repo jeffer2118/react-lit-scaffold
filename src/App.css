@@ -2,7 +2,6 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 .logo {
@@ -39,4 +38,37 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Test Page Styles */
+.test-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.test-page section {
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.test-page h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
+nav a {
+  padding: 0.5rem 1rem;
+  color: #646cff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
