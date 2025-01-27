@@ -4,7 +4,9 @@ import { Alert } from '../conduit-components/src/components/Alerts/conduit-alert
 import { Button } from '../conduit-components/src/components/Button/conduit-button';
 import { PieChart } from '../conduit-components/src/components/PieChart/pie-chart';
 import { Modal } from '../conduit-components/src/components/Modal/usa-modal';
-import { ConduitTable } from '../conduit-components/src/components/Table/table'
+import { ConduitTable } from '../conduit-components/src/components/Table/table';
+import { FormElement } from '../conduit-components/src/components/FormElements/form-elements';
+
 
 export const AlertComponent = createComponent({
   tagName: 'conduit-alert',
@@ -33,5 +35,11 @@ export const ModalComponent = createComponent({
 export const TableComponent = createComponent({
   tagName: 'conduit-table',
   elementClass: ConduitTable,
+  react: React,
+});
+
+export const FormElements = createComponent({
+  tagName: 'conduit-form-element',
+  elementClass: FormElement,
   react: React,
 });

@@ -1,0 +1,27 @@
+@forward "../../../global/uswds-config";
+@import "../../../global/global-colors";
+@import "../../../global/global";
+@import "../../../node_modules/@uswds/uswds/packages/usa-memorable-date/index";
+
+.usa-memorable-date {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+
+  .usa-form-group {
+    margin-top: 0;
+  }
+
+  .usa-form-group--day,
+  .usa-form-group--month {
+    width: 4.5rem;
+  }
+
+  .usa-form-group--year {
+    width: 6rem;
+  }
+
+  .usa-input {
+    text-align: center;
+  }
+}

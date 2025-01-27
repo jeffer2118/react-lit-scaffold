@@ -1,0 +1,164 @@
+// General Settings
+$theme-image-path: "../img"; // Image path
+$theme-show-compile-warnings: true; // Show Sass warnings
+$theme-show-notifications: true; // Show notifications
+// $theme-namespace: ( // Namespace map
+//   "grid": "grid-",
+//   "utility": "u-"
+// );
+$theme-prefix-separator: "\\:"; // Prefix separator
+$theme-layout-grid-use-important: false; // Important layout grid
+$theme-global-border-box-sizing: true; // Set border-box sizing globally
+
+// Focus Settings
+$theme-focus-color: "blue-40v"; // Focus color
+$theme-focus-offset: 0; // Focus offset
+$theme-focus-style: solid; // Focus outline style
+$theme-focus-width: 0.5; // Focus width
+
+// Icon Settings
+$theme-icon-image-size: 2; // Icon size
+
+// Color Settings
+$test-system-color-tokens: false; // Test color tokens
+$theme-color-base-family: "gray-cool"; // Base color family
+$theme-color-base-lightest: "gray-5"; // Base lightest color
+$theme-color-base-lighter: "gray-cool-10"; // Base lighter color
+$theme-color-base-light: "gray-cool-30"; // Base light color
+$theme-color-base: "gray-cool-50"; // Base color
+$theme-color-base-dark: "gray-cool-60"; // Base dark color
+$theme-color-base-darker: "gray-cool-70"; // Base darker color
+$theme-color-base-darkest: "gray-90"; // Base darkest color
+
+// Primary Color Settings
+$theme-color-primary-family: "blue"; // Primary color family
+$theme-color-primary-lightest: false;
+$theme-color-primary-lighter: "blue-10"; 
+$theme-color-primary-light: "blue-30"; 
+$theme-color-primary: "blue-60v"; 
+$theme-color-primary-vivid: "blue-warm-60v"; 
+$theme-color-primary-dark: "blue-warm-70v"; 
+$theme-color-primary-darker: "blue-warm-80v"; 
+$theme-color-primary-darkest: false;
+
+// Secondary Color Settings
+$theme-color-secondary-family: "red"; // Secondary color family
+$theme-color-secondary-lightest: false;
+$theme-color-secondary-lighter: "red-cool-10";
+$theme-color-secondary-light: "red-30"; 
+$theme-color-secondary: "red-50"; 
+$theme-color-secondary-vivid: "red-cool-50v"; 
+$theme-color-secondary-dark: "red-60v"; 
+$theme-color-secondary-darker: "red-70v"; 
+$theme-color-secondary-darkest: false;
+
+// Accent Color Settings
+$theme-color-accent-warm-family: "orange"; // Accent warm color family
+$theme-color-accent-cool-family: "blue-cool"; // Accent cool color family
+
+// Error Color Settings
+$theme-color-error-family: "red-warm"; // Error color family
+$theme-color-warning-family: "gold"; // Warning color family
+$theme-color-success-family: "green-cool"; // Success color family
+$theme-color-info-family: "cyan"; // Info color family
+$theme-color-emergency: "red-warm-60v"; // Emergency color
+
+// Disabled Color Settings
+$theme-color-disabled-family: "gray"; // Disabled color family
+
+// Body Background and Text Color
+$theme-body-background-color: "white"; // Body background color
+$theme-text-color: "ink"; // Body text color
+$theme-text-reverse-color: "white"; // Body text reverse color
+$theme-link-color: "primary"; // Link color
+$theme-link-visited-color: "violet-70v"; // Visited link color
+$theme-link-hover-color: "primary-dark"; // Hover link color
+$theme-link-active-color: "primary-darker"; // Active link color
+
+// Component Settings (Accordion, Alert, Button, Card)
+$theme-accordion-background-color: default; // Accordion background color
+$theme-accordion-border-width: 0.5; // Accordion border width
+$theme-accordion-border-color: "base-lightest"; // Accordion border color
+$theme-accordion-button-background-color: "base-lightest"; // Button background color in accordion
+
+$theme-alert-bar-width: 1; // Alert bar width
+$theme-alert-font-family: "ui"; // Alert font family
+$theme-alert-icon-size: 4; // Alert icon size
+$theme-alert-padding-x: 2.5; // Alert padding (left and right)
+$theme-alert-padding-y: 2; // Alert padding (top and bottom)
+$theme-alert-text-color: default; // Alert text color
+$theme-alert-link-color: default; // Alert link color
+
+$theme-button-border-radius: "md"; // Button border radius
+$theme-button-font-family: "ui"; // Button font family
+$theme-button-icon-gap: 1; // Button icon gap
+$theme-card-border-color: "base-lighter"; // Card border color
+$theme-card-border-radius: "lg"; // Card border radius
+$theme-card-border-width: 2px; // Card border width
+$theme-card-gap: 2; // Card gap in groups
+$theme-card-font-family: "body"; // Card font family
+
+// Typography Settings
+$theme-font-path: "../fonts"; // Path to the font files
+$theme-root-font-size: 10px; // Root font size
+$theme-respect-user-font-size: true; // Respect user font size
+$theme-body-font-family: "body"; // Body font family
+$theme-body-font-size: "sm"; // Body font size
+$theme-body-line-height: 5; // Body line height
+$theme-heading-line-height: 2; // Heading line height
+
+// Utility Settings
+$theme-utility-breakpoints: (
+  "mobile": false,
+  "mobile-lg": true,
+  "tablet": true,
+  "tablet-lg": false,
+  "desktop": true,
+  "desktop-lg": false,
+  "widescreen": false
+);
+
+// Global color palettes for utilities
+$global-color-palettes: (
+  "background-color",
+  "border-color",
+  "color",
+  "text-decoration-color"
+);
+
+// Utility modules settings (background-color, margin, padding, etc.)
+$background-color-settings: (
+  "output": true,
+  "responsive": true,
+  "hover": true,
+  "focus": true,
+  "active": true
+);
+$border-settings: (
+  "output": true,
+  "responsive": true,
+  "hover": true,
+  "focus": true
+);
+
+// Font settings (Example)
+$theme-font-type-sans: "source-sans-pro"; // Project sans-serif font
+$theme-font-type-serif: "merriweather"; // Project serif font
+$theme-font-type-mono: "roboto-mono"; // Project monospaced font
+
+// Font Size Tokens
+$theme-type-scale-3xs: 2;
+$theme-type-scale-2xs: 3;
+$theme-type-scale-xs: 4;
+$theme-type-scale-sm: 5;
+$theme-type-scale-md: 6;
+$theme-type-scale-lg: 9;
+$theme-type-scale-xl: 12;
+$theme-type-scale-2xl: 14;
+$theme-type-scale-3xl: 15;
+
+// Font Weight Tokens
+$theme-font-weight-light: 300;
+$theme-font-weight-normal: 400;
+$theme-font-weight-semibold: 600;
+$theme-font-weight-bold: 700;

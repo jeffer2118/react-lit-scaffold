@@ -1,0 +1,65 @@
+@forward "../../../global/uswds-config";
+@import "../../../global/global-colors";
+@import "../../../global/global";
+@import "../../../node_modules/@uswds/uswds/packages/usa-input/index";
+
+.usa-input-prefix-suffix {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+
+  .usa-input {
+    flex: 1;
+    margin-top: 0;
+
+    &:not(:first-child) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &:not(:last-child) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}
+
+.usa-input-prefix,
+.usa-input-suffix {
+  background-color: color('base-lightest');
+  border: 1px solid color('base-dark');
+  color: color('base-dark');
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  min-height: 2.5rem;
+}
+
+.usa-input-prefix {
+  border-right: none;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.usa-input-suffix {
+  border-left: none;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+// Error state styling
+.usa-form-group--error {
+  .usa-input-prefix,
+  .usa-input-suffix {
+    border-color: color('error');
+  }
+}
+
+// Disabled state styling
+.usa-input[disabled] + .usa-input-suffix,
+.usa-input-prefix + .usa-input[disabled] {
+  background-color: color('disabled-light');
+  border-color: color('disabled');
+  color: color('disabled-dark');
+}

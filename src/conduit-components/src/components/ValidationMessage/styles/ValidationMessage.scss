@@ -1,0 +1,12 @@
+@forward "../../../global/uswds-config";
+@import "../../../global/global-colors";
+@import "../../../global/global";
+@import "../../../node_modules/@uswds/uswds/packages/usa-alert/index";
+
+.usa-alert--validation {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  border-left-width: 0.25rem;
+}

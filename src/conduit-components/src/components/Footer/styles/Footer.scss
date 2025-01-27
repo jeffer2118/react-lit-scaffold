@@ -1,0 +1,54 @@
+@forward "../../../global/uswds-config";
+@import "../../../global/global-colors";
+@import "../../../global/global";
+@import "../../../node_modules/@uswds/uswds/packages/usa-footer/index";
+
+.usa-footer {
+  &__return-to-top {
+    @include u-padding-y(2.5);
+    background-color: color('base-lightest');
+    text-align: center;
+
+    a {
+      color: color('primary');
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__primary-section {
+    background-color: color('base-lighter');
+  }
+
+  &__secondary-section {
+    background-color: color('base-lightest');
+  }
+
+  &__logo {
+    align-items: center;
+
+    img {
+      max-width: 10rem;
+    }
+  }
+
+  &__social-links {
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+
+    @include at-media('mobile-lg') {
+      justify-content: flex-start;
+    }
+  }
+
+  &__contact-info {
+    justify-content: flex-end;
+
+    @include at-media('mobile-lg') {
+      justify-content: flex-start;
+    }
+  }
+}

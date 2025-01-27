@@ -1,0 +1,14 @@
+@forward "../../../global/uswds-config";
+@import "../../../global/global-colors";
+@import "../../../global/global";
+@import "../../../node_modules/@uswds/uswds/packages/usa-input/index";
+
+.usa-input {
+  &::placeholder {
+    color: color('base-light');
+  }
+
+  &:focus {
+    outline-offset: 0;
+  }
+}

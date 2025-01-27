@@ -1,0 +1,46 @@
+@forward "../../../global/uswds-config";
+@import "../../../global/global-colors";
+@import "../../../global/global";
+@import "../../../node_modules/@uswds/uswds/packages/usa-icon-list/index";
+
+.usa-icon-list {
+  &--horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .usa-icon-list__item {
+      flex: 0 1 auto;
+      margin-bottom: 0;
+    }
+  }
+
+  &--size-small {
+    .usa-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    .usa-icon-list__content {
+      font-size: 0.875rem;
+    }
+  }
+
+  &--size-large {
+    .usa-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    .usa-icon-list__content {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__subtext {
+    display: block;
+    color: color('base');
+    font-size: 0.875em;
+    margin-top: 0.25rem;
+  }
+}

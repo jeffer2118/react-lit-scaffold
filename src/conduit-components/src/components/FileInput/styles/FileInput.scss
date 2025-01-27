@@ -1,0 +1,32 @@
+@forward "../../../global/uswds-config";
+@import "../../../global/global-colors";
+@import "../../../global/global";
+@import "../../../node_modules/@uswds/uswds/packages/usa-file-input/index";
+
+.usa-file-input {
+  max-width: none;
+
+  &__preview-heading {
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  &__preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  &__preview-image {
+    background-color: color('base-lightest');
+    border: 1px solid color('base-lighter');
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+  }
+
+  &__preview-name {
+    font-size: 0.875rem;
+    word-break: break-all;
+  }
+}

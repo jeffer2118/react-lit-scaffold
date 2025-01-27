@@ -23,16 +23,6 @@ function App() {
           <Route path="/" element={
             <>
               <h1>React + Lit Elements</h1>
-              <div className="card">
-                <p>Count: {count}</p>
-                <MyButton 
-                  label={`Click me! (${count})`} 
-                  onClick={handleClick}
-                />
-              </div>
-              <p className="read-the-docs">
-                This button is a Lit Element used in React
-              </p>
             </>
           } />
         </Routes>

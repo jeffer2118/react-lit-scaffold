@@ -18,3 +18,40 @@
     }
   }
 }
+.expandable {
+  cursor: pointer;
+}
+.expandable:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.expanded-content {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+.expanded-row {
+  padding: 0.5rem 0;
+}
+.expand-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.expanded .expand-icon {
+  transform: rotate(90deg);
+}
+.nested-table {
+  margin: 1rem 0;
+}
+.nested-table-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #1b1b1b;
+}
+.nested-table table {
+  margin: 0;
+}

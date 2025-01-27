@@ -1,0 +1,107 @@
+@forward "../../../global/uswds-config";
+@import "../../../global/global-colors";
+@import "../../../global/global";
+
+.usa-identifier {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  background-color: color('base-lighter');
+  color: color('ink');
+
+  // Size variants
+  &--small {
+    font-size: 0.75rem;
+    padding: 0.125rem 0.375rem;
+  }
+
+  &--large {
+    font-size: 1rem;
+    padding: 0.375rem 0.75rem;
+  }
+
+  // Type variants
+  &--primary {
+    background-color: color('primary-lighter');
+    color: color('primary-darker');
+  }
+
+  &--secondary {
+    background-color: color('secondary-lighter');
+    color: color('secondary-darker');
+  }
+
+  &--accent {
+    background-color: color('accent-cool-lighter');
+    color: color('accent-cool-darker');
+  }
+
+  &--info {
+    background-color: color('info-lighter');
+    color: color('info-darker');
+  }
+
+  &--success {
+    background-color: color('success-lighter');
+    color: color('success-darker');
+  }
+
+  &--warning {
+    background-color: color('warning-lighter');
+    color: color('warning-darker');
+  }
+
+  &--error {
+    background-color: color('error-lighter');
+    color: color('error-darker');
+  }
+
+  // Prefix and suffix
+  &__prefix,
+  &__suffix {
+    color: inherit;
+    opacity: 0.8;
+  }
+
+  &__prefix {
+    margin-right: 0.25rem;
+    padding-right: 0.25rem;
+    border-right: 1px solid currentColor;
+  }
+
+  &__suffix {
+    margin-left: 0.25rem;
+    padding-left: 0.25rem;
+    border-left: 1px solid currentColor;
+  }
+
+  // Remove button
+  &__remove {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.25rem;
+    padding: 0;
+    border: none;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    .usa-icon {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+  }
+}
